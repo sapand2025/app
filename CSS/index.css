@@ -7,10 +7,11 @@ body{
     overflow-x: hidden;
     padding-top: 50px;
 }
-@media (max-width: 600px){
-    body{
-        overflow: hidden;
-    }
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 #header{
     display: flex;
@@ -52,13 +53,14 @@ body{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
 
     #sideBarIcon{
        visibility: hidden;
     }
     #navbar{
-        visibility: hidden;
+    
+        width: 10px;
     }
 }
 
@@ -217,6 +219,13 @@ p{
     transition: filter 0.3s, opacity 0.3s;
 
 }
+@media (max-width: 900px) {
+    .skillsDiv {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+  }
+
 /* When any skill is hovered */
 .serviceDiv:hover .service {
   filter: blur(2px);
@@ -233,20 +242,24 @@ p{
 @media (max-width:1100px){
     .serviceDiv{
         grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
     }
 
     /* grid-column: span 3 makes the last item take all 3 columns. */
     .service-last{
         grid-column: span 3;
+        margin: auto;
     }
 }
 
 @media (max-width:900px){
     .serviceDiv{
         grid-template-columns: 1fr 1fr;
+        margin: auto;
     }
     .service-last{
         grid-column: span 1;
+        margin: auto;
     
     }
 }
@@ -254,19 +267,17 @@ p{
 @media (max-width: 590px){
     .serviceDiv{
         grid-template-columns: 1fr;
+        margin: auto;
     }
 }
-@media (max-width: 900px) {
-    .skillsDiv {
-        grid-template-columns: 1fr;
-    }
-  }
+
 
 #projectsDiv{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     column-gap: 10px;
     height: auto;
+    margin: auto;
 }
 
 
@@ -274,6 +285,7 @@ p{
     #projectsDiv {
         grid-template-columns: 1fr;
         height: auto;
+        margin: auto;
     }
   }
 #projectAnimatedImg{
@@ -285,6 +297,11 @@ p{
   #carouseliD{
     width: 450px;
    margin: auto;
+  }
+  @media (max-width :600px){
+    #carouseliD{
+        width: 350px;
+    }
   }
 
 

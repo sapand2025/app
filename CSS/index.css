@@ -68,6 +68,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
+    text-align: center;
     
  
 }
@@ -77,6 +78,13 @@ body{
         margin: auto;
     }
   }
+
+  @media (max-width: 600px) {
+  #mainBody1Section {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 
 #sideImg{
     transition: opacity 1s;
@@ -157,6 +165,7 @@ p{
     margin:auto;
     padding: 10px; 
     width: 80%;
+    text-align: center;
 
     .skills{
         display: grid;
@@ -172,21 +181,6 @@ p{
     }
 }
 
-
-/* .Skillstransition{
-     /*default values can also be  removed*/
-   /*  transition: transform 0.5s;*/
-
-     /*transition for more than one property*/
-    /* transition: transform 0.5s;
- }
- .Skillstransition:hover{
-    transform: translateY(-5px);
-    
-    opacity: 0.8;
- } */
-
-
 .logo {
     margin-top: 20px;
   transition: transform 0.3s ease, scale 0.3s ease;
@@ -196,7 +190,19 @@ p{
 .skills:hover .logo {
   transform: scale(1.1); /* Makes it 20% bigger */
 }
-
+@media (max-width: 900px) {
+    .skillsDiv {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+  }
+@media (max-width: 600px) {
+  .skillsDiv {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+  
 .serviceDiv{
      display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -205,6 +211,7 @@ p{
     margin:auto; 
     padding: 0px 40px 0px 40px;
     margin-bottom: 100px;
+    text-align: center;
     
 }
 .service{
@@ -219,12 +226,7 @@ p{
     transition: filter 0.3s, opacity 0.3s;
 
 }
-@media (max-width: 900px) {
-    .skillsDiv {
-        grid-template-columns: 1fr;
-        margin: auto;
-    }
-  }
+
 
 /* When any skill is hovered */
 .serviceDiv:hover .service {
@@ -278,6 +280,7 @@ p{
     column-gap: 10px;
     height: auto;
     margin: auto;
+    text-align: center;
 }
 
 
@@ -298,12 +301,6 @@ p{
     width: 450px;
    margin: auto;
   }
-  @media (max-width :600px){
-    #carouseliD{
-        width: 350px;
-    }
-  }
-
 
    .carousel-indicators img{
     width: 25px;

@@ -52,15 +52,27 @@ body{
     }
 }
 
+@media (max-width: 500px){
+
+    #sideBarIcon{
+       visibility: hidden;
+    }
+    #navbar{
+        visibility: hidden;
+    }
+}
+
 #mainBody1Section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: auto;
     
  
 }
 @media (max-width: 1000px) {
     #mainBody1Section {
         grid-template-columns: 1fr;
+        margin: auto;
     }
   }
 

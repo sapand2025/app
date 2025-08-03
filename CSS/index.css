@@ -295,6 +295,12 @@ p{
     height: 300px;
     width: 300px;
   }
+  @media (max-width:600px){
+    .carouselImg{
+        height: 200px;
+        width: 200px;
+    }
+  }
 
   #exampleFormControlInput1,#exampleFormControlInput2,textarea{
     opacity: 0.7;

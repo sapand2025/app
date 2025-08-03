@@ -1,18 +1,8 @@
 body{
-    
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0pc 8px;
-    /*padding-top: 40px;*/
-    background-color:white;
     overflow-x: hidden;
     padding-top: 50px;
 }
-@media (max-width: 600px) {
-  body {
-    flex-direction: column;
-    width: 100%;
-  }
-}
+
 #header{
     display: flex;
     flex-direction: row;
@@ -44,47 +34,26 @@ body{
     box-shadow: 5px 5px 5px hsl(0, 1%, 76%);
 } 
 
-@media (max-width: 600px){
-
-    #navbar{
-        column-gap: 0.7rem;
-        font-size: 14px;
-        width: 350px;
-    }
-}
-
-@media (max-width: 600px){
+@media (max-width: 480px){
 
     #sideBarIcon{
        visibility: hidden;
-    }
-    #navbar{
-    
-        width: 10px;
     }
 }
 
 #mainBody1Section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto;
     text-align: center;
-    
- 
+    padding-bottom: 30px;
 }
+
 @media (max-width: 1000px) {
     #mainBody1Section {
         grid-template-columns: 1fr;
-        margin: auto;
+        text-align: center;       
     }
   }
-
-  @media (max-width: 600px) {
-  #mainBody1Section {
-    flex-direction: column;
-    width: 100%;
-  }
-}
 
 #sideImg{
     transition: opacity 1s;
@@ -175,9 +144,7 @@ p{
         border: 2px solid rgb(218, 216, 216);
        padding:3%;
         border-radius: 10px;
-        box-shadow: 5px 5px 5px hsl(0, 1%, 76%);
-        
-       
+        box-shadow: 5px 5px 5px hsl(0, 1%, 76%);       
     }
 }
 
@@ -193,26 +160,17 @@ p{
 @media (max-width: 900px) {
     .skillsDiv {
         grid-template-columns: 1fr;
-        margin: auto;
     }
   }
-@media (max-width: 600px) {
-  .skillsDiv {
-    flex-direction: column;
-    width: 100%;
-  }
-}
   
 .serviceDiv{
      display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
-    margin:auto; 
     padding: 0px 40px 0px 40px;
-    margin-bottom: 100px;
     text-align: center;
-    
+     
 }
 .service{
     height: 350px;
@@ -244,32 +202,26 @@ p{
 @media (max-width:1100px){
     .serviceDiv{
         grid-template-columns: 1fr 1fr 1fr;
-        margin: auto;
     }
 
     /* grid-column: span 3 makes the last item take all 3 columns. */
     .service-last{
         grid-column: span 3;
-        margin: auto;
     }
 }
 
 @media (max-width:900px){
     .serviceDiv{
         grid-template-columns: 1fr 1fr;
-        margin: auto;
     }
     .service-last{
-        grid-column: span 1;
-        margin: auto;
-    
+        grid-column: span 1;   
     }
 }
 
-@media (max-width: 590px){
+@media (max-width: 600px){
     .serviceDiv{
         grid-template-columns: 1fr;
-        margin: auto;
     }
 }
 
@@ -278,8 +230,6 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr; 
     column-gap: 10px;
-    height: auto;
-    margin: auto;
     text-align: center;
 }
 
@@ -288,7 +238,7 @@ p{
     #projectsDiv {
         grid-template-columns: 1fr;
         height: auto;
-        margin: auto;
+        text-align: center;
     }
   }
 #projectAnimatedImg{
@@ -339,6 +289,7 @@ p{
     .inputResize {
         width: 350px;
         margin:auto !important;
+        text-align: center;
     }
   }
  @media (max-width: 590px) {
@@ -373,35 +324,14 @@ p{
     
    }
 
-/*  #mainBodyContactSection{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    letter-spacing: 2px;
-   background-color: rgb(70, 67, 67);
- } */
- /*transitions*/
-
  .transitionDiv{
-    /*
-    transition-property:transform;
-    transition-duration: 0.5s;
-    transition-timing-function:ease;
-    transition-delay:0s; 
-    */
-    
-    /*short hand*/
-   /* transition: transform 0.5s ease 0s;*/
-        /*default values can also be  removed*/
+  
         transition: transform 0.5s;
 
          /*transition for more than one property*/
          transition: transform 0.5s, color 0.5s;
  }
- /*
- #transitionDiv:hover{
-    transform: rotate(360deg);
- }
- */
+ 
  .transitionDiv:hover{
     transform: translateY(-6px);
     color:rgb(146, 196, 212);
@@ -421,16 +351,7 @@ p{
     }
  }
 .slideInRight{
-    /*
-    animation-name: slideInRight;
-    animation-duration: 2.5s;
-    animation-timing-function: ease-in;
-    animation-delay:0s ;
-    animation-iteration-count:1 ;
-    animation-direction:normal ;
-    animation-fill-mode:none;
-    */
-    /*short hand*/
+ 
     animation:slideInRight 2s ease-in 0s normal none;
 }
 

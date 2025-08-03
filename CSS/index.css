@@ -290,6 +290,10 @@ p{
   .carousel-indicators button.activ img{
     border: 2px solid red;
   }
+  .carousel-item{
+    padding-top: 80px;
+    height: 500px;
+  }
 
   .carouselImg{
     height: 300px;

@@ -77,7 +77,9 @@ p{
     border-radius: 50%;
 }
 #descDiv{
-    font-family:'Times New Roman', Times, serif;text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 15px;
 }
 #ExpDiv{
     display: grid;
@@ -148,6 +150,13 @@ p{
     }
 }
 
+.skillsText{
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: large;
+    letter-spacing: 0.5px;
+}
 .logo {
     margin-top: 20px;
   transition: transform 0.3s ease, scale 0.3s ease;
@@ -162,6 +171,13 @@ p{
         grid-template-columns: 1fr;
     }
   }
+
+  @media (max-width: 700px) {
+    .skillsDiv {
+        width: 98%;
+    }
+  }
+  
   
 .serviceDiv{
      display: grid;
@@ -185,6 +201,19 @@ p{
 
 }
 
+.serviceHead{
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 10px;
+    font-style: italic;
+    
+}
+.serviceText{
+    letter-spacing: 1px;
+    font-family:sans-serif;
+    font-size: larger;
+    font-size: 16px;
+}
 
 /* When any skill is hovered */
 .serviceDiv:hover .service {

@@ -97,7 +97,7 @@ p{
 }
 #ExpDiv{
     display: grid;
-    grid-template-columns:50px 250px;
+    grid-template-columns:30px 200px;
     column-gap: 20px;
     text-align: center;
     justify-content: center;

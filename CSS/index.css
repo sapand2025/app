@@ -6,7 +6,7 @@ body{
 #header{
     display: flex;
     flex-direction: row;
-    justify-content:space-between ;
+    justify-content:space-between;
     position: fixed;
     right: 0;
     left: 0;
@@ -160,9 +160,33 @@ p{
         border: 2px solid rgb(218, 216, 216);
        padding:3%;
         border-radius: 10px;
-        box-shadow: 5px 5px 5px hsl(0, 1%, 76%);       
+        box-shadow: 5px 5px 5px hsl(0, 1%, 76%);   
+        
     }
 }
+
+.skillsAnimateFast{
+     opacity: 0;
+        transform: translateY(40px); /* start hidden below */
+        transition: all 1s ease-out;  
+}
+
+.skillsAnimateFast.show{
+  opacity: 1;
+  transform: translateY(0); /* slide into place */
+}
+
+.skillsAnimateSlow{
+     opacity: 0;
+        transform: translateY(40px); /* start hidden below */
+        transition: all 2.5s ease-out;  
+}
+.skillsAnimateSlow.show {
+  opacity: 1;
+  transform: translateY(0); /* slide into place */
+}
+
+
 
 .skillsText{
     text-align: left;
@@ -180,6 +204,8 @@ p{
 .skills:hover .logo {
   transform: scale(1.1); /* Makes it 20% bigger */
 }
+
+
 @media (max-width: 900px) {
     .skillsDiv {
         grid-template-columns: 1fr;
@@ -211,8 +237,30 @@ p{
     border: 2px rgb(223, 220, 220) solid;
     border-radius: 10px;
     box-shadow: 5px 5px 5px hsl(0, 1%, 76%);
-    transition: filter 0.3s, opacity 0.3s;
 
+  opacity: 0;
+  transition: all 1.5s ease-out;
+
+}
+
+/* Different start positions */
+.slide-up {
+  transform: translateY(40px);
+}
+.slide-left {
+  transform: translateX(-40px);
+}
+.slide-right {
+  transform: translateX(40px);
+}
+.slide-down {
+  transform: translateY(-40px);
+}
+
+/* Final state when visible */
+.service.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .serviceHead{
@@ -279,6 +327,23 @@ p{
     text-align: center;
     margin: 0 auto;
 }
+ 
+.projectAnimation{
+    opacity: 0;
+  transition: all 2s ease-out;
+}
+
+.slideLeft {
+  transform: translateX(-50px);
+}
+.slideRight {
+  transform: translateX(50px);
+}
+
+.projectAnimation.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 
   @media (max-width: 1000px) {
@@ -339,6 +404,15 @@ p{
     width: 45%;
     margin:auto;
     position: relative;
+
+   opacity: 0;
+        transform: translateY(40px); /* start hidden below */
+        transition: all 2s ease-out;  
+}
+
+.formDiv.show {
+  opacity: 1;
+  transform: translateY(0); /* slide into place */
 }
 
 @media(max-width:1000px){
@@ -510,4 +584,5 @@ p{
    animation-range: entry 50% cover 30%;
  
 }
+
 

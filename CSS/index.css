@@ -131,7 +131,6 @@ p{
 #descDiv{
     font-family:'Times New Roman', Times, serif;
     text-align: center;
-    margin: 0 auto;
 }
 #ExpDiv{
     display: grid;

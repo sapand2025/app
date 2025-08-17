@@ -42,7 +42,7 @@ body{
 }
 
 .sectionHead{
-  margin-left: 55px; 
+  padding-left: 4%; 
   font-family: 'Times New Roman', Times, serif;
   display: inline-block;
 }

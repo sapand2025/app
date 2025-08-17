@@ -197,7 +197,8 @@ p{
         border: 2px solid rgb(218, 216, 216);
        padding:3%;
         border-radius: 10px;
-        box-shadow: 5px 5px 5px hsl(0, 1%, 76%);   
+        box-shadow: 5px 5px 5px hsl(0, 1%, 76%); 
+        height: 150px;  
         
     }
 }
@@ -432,6 +433,7 @@ p{
   
   #carouseliD{
     width: 70%;
+    height: auto;
    margin: auto;
   }
   

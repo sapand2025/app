@@ -103,7 +103,7 @@ body{
 
    @media (max-width: 600px) {
     #mainBody1Section { 
-        width: 95%; 
+        width: 98%; 
     }
   }
 
@@ -131,7 +131,6 @@ p{
 #descDiv{
     font-family:'Times New Roman', Times, serif;
     text-align: center;
-    margin-left: 15px;
 }
 #ExpDiv{
     display: grid;
@@ -421,7 +420,7 @@ p{
 
   @media (max-width: 650px) {
   #projectsDiv {
-      width: 95%;
+      width: 98%;
   }
 }
 

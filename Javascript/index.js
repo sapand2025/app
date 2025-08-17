@@ -97,8 +97,6 @@ const observer5 = new IntersectionObserver((entries) => {
       entry.target.classList.remove('show'); // remove class when out of view
     }
   });
-}, {
-  threshold: 0.3 // trigger when 20% of the section is visible
 });
 
-formDiv.forEach(form => observer.observe(form));
+formDiv.forEach(form => observer5.observe(form));

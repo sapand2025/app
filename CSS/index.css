@@ -41,12 +41,32 @@ body{
     }
 }
 
+.sectionHead{
+  margin-left: 55px; 
+  font-family: 'Times New Roman', Times, serif;
+  display: inline-block;
+}
 #mainBody1Section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+     grid-template-areas: "left right"; /*left first right second*/
     text-align: center;
     padding-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
 }
+
+
+    .left {
+      grid-area: left;
+      padding-top: 35%;
+    }
+
+    .right {
+      grid-area: right;
+    }
+
+
 #verticalName{
     writing-mode: vertical-lr;
     padding-top: 10px;
@@ -65,7 +85,25 @@ body{
 @media (max-width: 1000px) {
     #mainBody1Section {
         grid-template-columns: 1fr;
-        text-align: center;       
+          grid-template-areas:
+          "right"
+          "left"; /* right comes first */   
+        width: 70%; 
+    }
+    .left{
+        padding-top: 5%;
+    }
+  }
+
+  @media (max-width: 850px) {
+    #mainBody1Section { 
+        width: 80%; 
+    }
+  }
+
+   @media (max-width: 600px) {
+    #mainBody1Section { 
+        width: 95%; 
     }
   }
 
@@ -206,9 +244,17 @@ p{
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .skillsDiv {
         grid-template-columns: 1fr;
+        width: 50%;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .skillsDiv {
+        grid-template-columns: 1fr;
+        width: 70%;
     }
   }
 
@@ -227,6 +273,7 @@ p{
     padding: 0px 40px 0px 40px;
     text-align: center;
      margin: 0 auto;
+     width: 95%;
 }
 .service{
     height: 350px;
@@ -290,7 +337,7 @@ p{
 }
 
 
-@media (max-width:1100px){
+@media (max-width:1150px){
     .serviceDiv{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -327,6 +374,12 @@ p{
     text-align: center;
     margin: 0 auto;
 }
+.projectLeft{
+    order: 1;
+}
+.projectRight{
+    order: 2;
+}
  
 .projectAnimation{
     opacity: 0;
@@ -349,8 +402,28 @@ p{
   @media (max-width: 1000px) {
     #projectsDiv {
         grid-template-columns: 1fr;
+        width: 70%;
     }
+    .projectLeft{
+    order: 2;
+}
+.projectRight{
+    order: 1;
+}
   }
+  
+
+   @media (max-width: 800px) {
+  #projectsDiv {
+      width: 80%;
+  }
+}
+
+  @media (max-width: 650px) {
+  #projectsDiv {
+      width: 95%;
+  }
+}
 
 #projectAnimatedImg{
 
@@ -399,10 +472,12 @@ p{
         width: 200px;
     }
   }
+
+
 .formDiv{
     height: 400px;
     width: 45%;
-    margin:auto;
+    margin:0 auto;
     position: relative;
 
    opacity: 0;
